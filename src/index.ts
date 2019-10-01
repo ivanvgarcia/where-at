@@ -1,5 +1,7 @@
 import { User } from './User';
 import { Company } from './Company';
+import { CustomMap } from './CustomMap';
+
 import 'bulma/css/bulma.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,11 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const user = new User();
 const company = new Company();
-const mapDiv = document.getElementById('map');
-const map = new google.maps.Map(mapDiv, {
-  zoom: 1,
-  center: {
-    lat: 0,
-    lng: 0
-  }
-});
+const customMap = new CustomMap('map');
+customMap.addUserMarker(user);
+customMap.addCompanyMarker(company);
