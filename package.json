@@ -1,0 +1,14 @@
+{
+  "name": "where-at",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@types/googlemaps": "^3.37.7",
+    "bulma": "^0.7.5",
+    "faker": "^4.1.0"
+  }
+}
